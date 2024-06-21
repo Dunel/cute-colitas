@@ -35,7 +35,7 @@ const Products = ({ products = productList }) => {
       <br/>
       <h2 className="text-5xl font-bold mb-4 text-[#352b4d]">Nuestros Productos</h2>
       
-      <p class="max-w-7xl mx-auto text-justify text-2xl text-[#352b4d]">
+      <p className="max-w-7xl mx-auto text-justify text-2xl text-[#352b4d]">
   Nuestros productos están diseñados con finas telas y los más sutiles detalles, 
   para complementar tu look de una forma única y delicada. Utilizamos materiales 
   de alta calidad para asegurar que nuestros accesorios sean duraderos y cómodos de usar.
