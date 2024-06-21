@@ -10,6 +10,10 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  @apply max-w-screen-lg mx-auto px-4;
+}
+
 .header, .footer {
   background-color: #f8f8f8;
   padding: 1rem 0;

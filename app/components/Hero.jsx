@@ -9,7 +9,7 @@ const Hero = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsIntersecting(true);
-          observer.disconnect(); // Deja de observar una vez que el video es visible
+          observer.disconnect(); 
         }
       },
       { threshold: 0.1 }
@@ -35,8 +35,8 @@ const Hero = () => {
         </video>
       )}
       <div className="hero-content">
-        <h1>Welcome to Our Website</h1>
-        <p>Discover our products and services</p>
+        {/*<h1>Welcome to Our Website</h1>
+        <p>Discover our products and services</p>*/}
       </div>
     </div>
   );
