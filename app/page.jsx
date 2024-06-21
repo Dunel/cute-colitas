@@ -26,7 +26,6 @@ export default function Page() {
         <br/>
           
           <p class="max-w-7xl mx-auto text-justify">
-
             Aunque nuestro taller es físico, te brindamos asesoría online y comercializamos nuestros productos de forma digital, visita en nuestro Instagram <b><a><i>@cutecolitas.</i></a></b>
           </p>
         </div>
