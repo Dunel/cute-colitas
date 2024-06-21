@@ -11,20 +11,20 @@ export default function Page() {
         <br/>
         <h2 className="text-5xl font-bold mb-4 text-[#352b4d]">Sobre Nosotros</h2>
         <br/>
-        <div class="bg-white p-8">
-          <h2 class="text-3xl text-center">Somos Cute Colitas</h2>
+        <div className="bg-white p-8">
+          <h2 className="text-3xl text-center">Somos Cute Colitas</h2>
         <br/>
-          <p class="max-w-7xl mx-auto text-justify">
+          <p className="max-w-7xl mx-auto text-justify">
             🎀 Somos Cute Colitas y nos dedicamos al diseño y confección especializada de scrunchies, colitas y moñeras para el cabello, con detalles cuidadosamente elaborados. Cada accesorio es creado con atención al detalle, desde la selección de los materiales hasta el acabado final, asegurando que cada pieza sea perfecta.
           </p>
         <br/>
           
-          <p class="max-w-7xl mx-auto text-justify">
+          <p className="max-w-7xl mx-auto text-justify">
             📍 Nuestro taller artesanal está ubicado en el municipio San Francisco del estado Zulia. Allí es donde ocurre la magia, nos inspiramos en ti y tu estilo de vida. Estamos completamente dedicados a la confección y decoración manual de accesorios femeninos para realzar el look de la mujer Venezolana.
           </p>
         <br/>
           
-          <p class="max-w-7xl mx-auto text-justify">
+          <p className="max-w-7xl mx-auto text-justify">
             Aunque nuestro taller es físico, te brindamos asesoría online y comercializamos nuestros productos de forma digital, visita en nuestro Instagram <b><a><i>@cutecolitas.</i></a></b>
           </p>
         </div>
