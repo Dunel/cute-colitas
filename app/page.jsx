@@ -29,8 +29,6 @@ export default function Page() {
           </p>
         </div>
 
-
-
       </section>
       <section id="value-proposition" className="section py-8 bg-[#7262968a] text-center h-screen w-screen">
         <h2 className="text-5xl font-bold mb-4">Propuesta de Valor</h2>
