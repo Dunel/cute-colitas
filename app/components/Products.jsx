@@ -31,7 +31,21 @@ const productList = [
 const Products = ({ products = productList }) => {
   return (
     <section id="products" className="section py-8">
-      <h2 className="text-2xl md:text-3xl mb-8 text-center">Nuestros Productos</h2>
+      <br/>
+      <br/>
+      <h2 className="text-5xl font-bold mb-4 text-[#352b4d]">Nuestros Productos</h2>
+      
+      <p class="max-w-7xl mx-auto text-justify text-2xl text-[#352b4d]">
+  Nuestros productos están diseñados con finas telas y los más sutiles detalles, 
+  para complementar tu look de una forma única y delicada. Utilizamos materiales 
+  de alta calidad para asegurar que nuestros accesorios sean duraderos y cómodos de usar.
+  <br/>
+  A continuación, te mostramos nuestro catálogo de productos. Si no puedes decidirte por 
+  alguno de nuestros hermosos diseños, no te preocupes!! envíanos una foto de cabello 
+  para asesorarte según su largo, textura y color. Estamos comprometidos en brindarte una 
+  experiencia de compra excepcional, con un servicio al cliente atento y personalizado para 
+  asegurar tu completa satisfacción.
+</p>
       <div className="product-grid flex flex-wrap justify-center gap-4">
         {products.map((product, index) => (
           <div

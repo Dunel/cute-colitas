@@ -36,6 +36,8 @@ export default function Page() {
 
 
       <section id="value-proposition" className="section py-8 bg-[#7262968a] text-center h-screen w-screen">
+        <br/>
+        <br/>
         <h2 className="text-5xl font-bold mb-4">Propuesta de Valor</h2>
         <p className="max-w-2xl mx-auto">Nuestros accesorios son piezas únicas y exclusivas, elaboradas con materiales económicos pero de alta calidad. Cada producto es decorado manualmente con detalles artísticos, bordados y pedrería, asegurando que cada pieza sea una obra de arte que resalte la belleza y estilo de cada mujer.</p>
       </section>
