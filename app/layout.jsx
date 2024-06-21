@@ -17,8 +17,8 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" type="image/png" href="/favicon.ico" sizes="16x16"/>
-        <link rel="apple-touch-icon" href="public/favicon.ico" sizes="32x32 16x16"/>
+        <link rel="icon" type="image/png" href="/favicons.ico" sizes="16x16"/>
+        <link rel="apple-touch-icon" href="/favicons.ico" sizes="32x32 16x16"/>
       </Head>
       <body className={inter.className}>
         <Header />
