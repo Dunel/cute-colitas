@@ -24,9 +24,9 @@ const Header = () => {
             <li className="w-full text-center font-bold md:w-auto md:text-left">
               <Link className="text-[#b9afd3] hover:text-white" href="#products">Productos</Link>
             </li>
-            <li className="w-full text-center font-bold md:w-auto md:text-left">
+            {/*<li className="w-full text-center font-bold md:w-auto md:text-left">
               <Link className="text-[#b9afd3] hover:text-white" href="#contact">Contacto</Link>
-            </li>
+            </li>*/}
           </ul>
         </nav>
       </div>

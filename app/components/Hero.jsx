@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 
 const Hero = () => {
@@ -26,17 +27,27 @@ const Hero = () => {
     };
   }, [videoContainerRef]);
 
+  const handleButtonClick = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div ref={videoContainerRef} className="hero shadow-[0_0_5rem_rgba(53,43,77,1)]">
+    <div ref={videoContainerRef} className="relative hero shadow-[0_0_5rem_rgba(53,43,77,1)]">
       {isIntersecting && (
-        <video className="hero-video" autoPlay loop muted>
+        <video className="w-full h-full object-cover" autoPlay loop muted>
           <source src="/web.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       )}
-      <div className="hero-content">
-        {/*<h1>Welcome to Our Website</h1>
-        <p>Discover our products and services</p>*/}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50">
+        <h1 className="text-4xl font-bold mb-4">Bienvenidos a CuteColitas</h1>
+        <p className="text-xl mb-6">Descubre nuestras ofertas exclusivas en accesorios para el cabello</p>
+        <button
+          className="bg-[#5d4496] hover:bg-[#352b4d] text-white font-bold py-2 px-4 rounded"
+          onClick={handleButtonClick}
+        >
+          Suscríbete a nuestra lista de correo
+        </button>
       </div>
     </div>
   );

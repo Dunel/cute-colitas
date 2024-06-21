@@ -1,31 +1,55 @@
+import React, { useState } from "react";
+
 const Contact = () => {
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [gmair, setGmair] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsSubscribed(true);
+  };
+
   return (
     <section id="contact" className="section py-8 bg-white text-center">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
-        <h2 className="text-3xl font-bold mb-8">Contacto</h2>
-        <form className="contact-form max-w-lg mx-auto">
-          <label htmlFor="email" className="block text-left mb-2">Correo Electrónico:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="w-full p-2 mb-4 border border-gray-300 rounded-md"
-            required
-          />
-          <label htmlFor="message" className="block text-left mb-2">Mensaje:</label>
-          <textarea
-            id="message"
-            name="message"
-            className="w-full p-2 mb-4 border border-gray-300 rounded-md"
-            required
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800"
+        <h2 className="text-3xl font-bold mb-8">Suscríbete</h2>
+        {!isSubscribed ? (
+          <form
+            onSubmit={handleSubmit}
+            className="contact-form max-w-lg mx-auto"
           >
-            Enviar
-          </button>
-        </form>
+            <label htmlFor="email" className="block text-left mb-2">
+              Correo Electrónico:
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="w-full p-2 mb-4 border border-gray-300 rounded-md"
+              onChange={(e) => {
+                setGmair(e.target.value);
+              }}
+              required
+            />
+            {/*<label htmlFor="message" className="block text-left mb-2">Mensaje:</label>
+            <textarea
+              id="message"
+              name="message"
+              className="w-full p-2 mb-4 border border-gray-300 rounded-md"
+              required
+            ></textarea>*/}
+            <button
+              type="submit"
+              className="bg-[#5d4496] hover:bg-[#352b4d] text-white font-bold py-2 px-4 rounded"
+            >
+              Suscribir
+            </button>
+          </form>
+        ) : (
+          <p className="text-xl font-semibold text-green-500">
+            Hola {gmair}, ¡Te has suscrito exitosamente!
+          </p>
+        )}
       </div>
     </section>
   );
