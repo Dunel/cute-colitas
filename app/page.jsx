@@ -7,7 +7,6 @@ export default function Page() {
   return (
     <>
       <Hero />
-
       <section id="about" className="section bg-white h-screen w-screen text-[#352b4d] text-justify leading-relaxed text-2xl">
         <br/>
         <h2 className="text-5xl font-bold mb-4 text-[#352b4d]">Sobre Nosotros</h2>
@@ -33,13 +32,9 @@ export default function Page() {
 
 
       </section>
-
-
       <section id="value-proposition" className="section py-8 bg-[#7262968a] text-center h-screen w-screen">
-        <br/>
-        <br/>
         <h2 className="text-5xl font-bold mb-4">Propuesta de Valor</h2>
-        <p className="max-w-2xl mx-auto">Nuestros accesorios son piezas únicas y exclusivas, elaboradas con materiales económicos pero de alta calidad. Cada producto es decorado manualmente con detalles artísticos, bordados y pedrería, asegurando que cada pieza sea una obra de arte que resalte la belleza y estilo de cada mujer.</p>
+        <p className="max-w-2xl mx-auto"> Nuestros accesorios son piezas únicas y exclusivas, elaboradas con materiales económicos pero de alta calidad. Cada producto es decorado manualmente con detalles artísticos, bordados y pedrería, asegurando que cada pieza sea una obra de arte que resalte la belleza y estilo de cada mujer.</p>
       </section>
       <Products />
       <Contact />
