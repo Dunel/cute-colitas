@@ -29,8 +29,8 @@ const productList = [
 
 const Products = ({ products = productList }) => {
   return (
-    <section id="products" className="section bg-white w-full text-[#352b4d] text-justify leading-relaxed text-2xl py-8">
-      <h2 className="text-5xl font-bold mb-4 text-center">Nuestros Productos</h2>
+    <section id="products" className="section py-8">
+      <h2 className="text-2xl md:text-3xl mb-8 text-center">Nuestros Productos</h2>
       <div className="product-grid flex flex-wrap justify-center gap-4">
         {products.map((product, index) => (
           <div
