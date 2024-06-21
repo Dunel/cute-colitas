@@ -27,7 +27,7 @@ const Hero = () => {
   }, [videoContainerRef]);
 
   return (
-    <div ref={videoContainerRef} className="hero">
+    <div ref={videoContainerRef} className="hero shadow-[0_0_5rem_rgba(53,43,77,1)]">
       {isIntersecting && (
         <video className="hero-video" autoPlay loop muted>
           <source src="/web.webm" type="video/webm" />
